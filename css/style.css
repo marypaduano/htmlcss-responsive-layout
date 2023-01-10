@@ -198,3 +198,65 @@ a {
 
 /***********************
  ******* SECTION PURPLE ********/
+
+.section-purple{
+    background-color: var(--purple);
+    
+}
+
+.col-6{
+    flex-basis: calc(100% / 2);
+    padding: 100px;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.white-card{
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    text-align: center;
+    gap: 10px;
+    flex-direction: column;
+    display: flex;
+}
+
+
+
+.white{
+    color: white;
+
+}
+
+.arrow{
+    border-radius: 50px;
+    background-color: var(--purple);
+    max-width: 30px;
+    margin: 0 auto;
+    padding: 10px 22px;
+    margin-bottom: 10px;
+}
+
+.fa-arrow-down{
+    text-align: center;
+}
+
+.cursive{
+    font-style: oblique;
+}
+
+/*TABLET */
+@media only screen and (max-width: 991px ){
+    .col-6{
+        flex-basis: 100%  
+     } 
+    }
+/*MOBILE */
+
+@media only screen and (max-width: 576px ){
+    .col-6{
+        flex-basis: 100%  
+     } 
+    }
