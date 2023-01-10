@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+ul,
+li,
+menu{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+:root {
+    --blue: #0084FD;
+    --azure: #B5DDFF;
+    --purple: #9792E4;
+    --black: #333333;
+    --yellow: #FDC15F;
+
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/***********************
+ ******* HEADER ********/
+
+.main_header{
+    background-color: var(--blue);
+    padding: 19px 0;
+    color: white;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+
+.menu{
+    display: flex;
+}
+
+.menu_item a {
+
+    line-height: 38px;
+    font-size: 16px;
+    padding: 0 16px;
+    
+}
+
+.hamburger{
+    display: none;
+}
+
+.button{
+    border-radius: 20px;
+
+}
+
+.button-white{
+    background-color:white;
+    color: black;
+
+}
+
+.button-purple{
+    background-color: var(--purple);
+
+}
+
+.button-blue{
+    background-color: var(--blue);
+    color: white;
+    padding: 10px;
+    width: 150px;
+}
+
+
+
+
+/*TABLET */
+
+@media only screen and (max-width: 991px ){
+
+    .hamburger{
+        display: block;
+        align-self: center;
+    }
+    .menu{
+        display: none;
+    }
+}
+
+/***********************
+ ******* HERO ********/
+
+.card{
+    background-color: var(--azure);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 16px;
+    display: flex;
+}
+
+.col-8{
+    flex-basis: calc(100%*2/3);
+}
+
+.col-4{
+    flex-basis: calc(100%/3);
+}
+
+.phone-img{
+    margin-bottom: -25px;
+}
+
+
+.content-description-card{
+    flex-direction: column;
+    
+}
+
+.hero-card-title{
+    color: var(--blue);
+}
+
+
+/*TABLET */
+@media only screen and (max-width: 991px ){
+    .card {
+		flex-wrap: wrap;
+		row-gap: 46px;
+	}
+
+    .phone-img{
+        max-width: 150px;
+    }
+   
+}
+
+/*MOBILE */
+
+@media only screen and (max-width: 576px ){
+
+.hero [class^="col-"]{
+    flex-basis: 100%;
+}
+
+    
+}
