@@ -435,11 +435,16 @@ a {
     line-height: 24px;
 }
 
+.fa-linkedin{
+    padding-right: 5px;
+}
+
 .fa-quote-left{
     position: absolute;
     font-size: 70px;    
     margin-top: -300px;
 }
+
 
 /*MOBILE */
 
@@ -455,4 +460,8 @@ a {
 	}
     
 }
+
+/***********************
+ ******* GET STARTED ********/
+
 
