@@ -33,10 +33,12 @@ a {
 
 }
 
+
 .container{
     max-width: 1140px;
     margin: 0 auto;
 }
+
 
 .row{
     display: flex;
@@ -89,6 +91,16 @@ a {
 
 }
 
+.bt-more{
+    color: white;
+    font-weight: 700;
+    padding: 10px 28px;
+    max-width: 100px;
+    border-color: currentColor;
+    
+    
+}
+
 .button-blue{
     background-color: var(--blue);
     color: white;
@@ -113,7 +125,8 @@ a {
 /***********************
  ******* HERO ********/
 
-.card{
+
+ .card{
     background-color: var(--azure);
     padding: 20px;
     border-radius: 20px;
@@ -201,12 +214,17 @@ a {
 
 .section-purple{
     background-color: var(--purple);
+    padding: 50px 0;
     
+}
+
+.container-small{
+    max-width: 890px;
+    margin: 0 auto;
 }
 
 .col-6{
     flex-basis: calc(100% / 2);
-    padding: 100px;
     flex-direction: column;
     display: flex;
     gap: 20px;
@@ -215,19 +233,38 @@ a {
 
 .white-card{
     background-color: white;
-    border-radius: 20px;
+    border-radius: 50px;
     color: black;
     text-align: center;
+    align-items: center;
     gap: 10px;
     flex-direction: column;
     display: flex;
+    padding: 32px 48px;
 }
 
+.white-card img{
+    width: 70%;
+}
+
+.white img{
+    width: 70%;
+}
+
+.section-purple .end-direction{
+    align-self: flex-end;
+}
 
 
 .white{
     color: white;
+    margin-bottom: 100px;
+    
 
+}
+
+.white img{
+    margin-bottom: 100px;
 }
 
 .arrow{
@@ -244,7 +281,7 @@ a {
 }
 
 .cursive{
-    font-style: oblique;
+    font-style: italic;
 }
 
 /*TABLET */
@@ -271,12 +308,13 @@ a {
 .col-12{
     flex-basis: 100%;
     background-color: var(--purple);
-    border-radius: 20px;
+    border-radius: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
     color: white;
+    padding: 15px 0;
    
 }
 
@@ -314,5 +352,53 @@ a {
 }
 
 
+}
+
+/***********************
+ ******* SECTION CARD NUM ********/
+
+.title-white{
+    color: white;
+    padding-bottom: 20px;
+}
+
+ .card.card-num{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 38px;
+}
+
+.num{
+    font-weight: 800;
+    font-size: 52px;
+}
+
+.card.card-num > h2,h3{
+    color: var(--purple);    
+    
+}
+
+/*TABLET */
+@media only screen and (max-width: 991px ){
+    .col-4.col-num {		
+		flex-basis: 50%;
+        padding: 18px;
+	}
+
+
+   
+}
+
+/*MOBILE */
+
+@media only screen and (max-width: 576px ){
+
+    .col-4.col-num {		
+		flex-basis: 100%;
+       
+	}
+    
 }
 
