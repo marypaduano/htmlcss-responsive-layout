@@ -257,7 +257,12 @@ a {
 
 @media only screen and (max-width: 576px ){
     .col-6{
-        flex-basis: 100%  
+        flex-basis: 100%;
+        padding: 50px;
+     } 
+     .white-card{
+        flex-basis: 100%;
+        padding: 10px; 
      } 
     }
 
@@ -280,6 +285,7 @@ a {
     max-height: 230px;
     border-radius: 50%;
     padding: 15px;
+    align-self: center;
 }
 
 .col{
@@ -304,7 +310,7 @@ a {
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-
+    flex-direction: column;
 }
 
 
