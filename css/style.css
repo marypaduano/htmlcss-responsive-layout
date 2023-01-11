@@ -94,8 +94,8 @@ a {
 .bt-more{
     color: white;
     font-weight: 700;
-    padding: 10px 28px;
-    max-width: 100px;
+    padding: 8px 25px;
+    max-width: max-content;
     border-color: currentColor;
     
     
@@ -137,12 +137,19 @@ a {
 
 .col-8{
     flex-basis: calc(100%*2/3);
+    gap: 20px;
+    flex-direction: column;
+    display: flex;
 }
 
 .col-4{
-    flex-basis: calc(100%/3);    
+    flex-basis: calc(100%/3);
+    display: flex; 
+    
+    
 
 }
+
 
 .phone-img{
     margin-bottom: -25px;
@@ -221,6 +228,7 @@ a {
 .container-small{
     max-width: 890px;
     margin: 0 auto;
+    padding: 50px 0;
 }
 
 .col-6{
@@ -396,6 +404,52 @@ a {
 @media only screen and (max-width: 576px ){
 
     .col-4.col-num {		
+		flex-basis: 100%;
+       
+	}
+    
+}
+
+/***********************
+ ******* ABOUT US ********/
+
+.col-4 img{
+    border-radius: 50%;
+    max-width: 65%;
+    align-self: center;
+    
+}
+
+
+.col-4.col-about{
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    color: var(--purple);
+    padding: 18px;
+    
+}
+
+.col-about > p{
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.fa-quote-left{
+    position: absolute;
+    font-size: 70px;    
+    margin-top: -300px;
+}
+
+/*MOBILE */
+
+@media only screen and (max-width: 576px ){
+
+    .col-4.col-about {		
+		flex-basis: 100%;
+       
+	}
+    .col-8.col-about {		
 		flex-basis: 100%;
        
 	}
