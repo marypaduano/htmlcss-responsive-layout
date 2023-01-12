@@ -327,8 +327,7 @@ a {
 }
 
 .pic-testimonial{
-    max-width: 200px;
-    max-height: 230px;
+    width: 200px;
     border-radius: 50%;
     padding: 15px;
     align-self: center;
@@ -353,7 +352,6 @@ a {
 
 @media only screen and (max-width: 576px ){
 .col-12{
-    flex-wrap: wrap;
     align-items: center;
     text-align: center;
     flex-direction: column;
@@ -424,7 +422,6 @@ a {
 .col-4.col-about{
     flex-direction: column;
     gap: 20px;
-    position: relative;
     color: var(--purple);
     padding: 18px;
     
@@ -439,11 +436,6 @@ a {
     padding-right: 5px;
 }
 
-.fa-quote-left{
-    position: absolute;
-    font-size: 70px;    
-    margin-top: -300px;
-}
 
 
 /*MOBILE */
